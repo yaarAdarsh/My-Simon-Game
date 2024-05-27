@@ -46,6 +46,7 @@ var checkAnswer=function(currentLevel){
         $("#level-title").text("Game Over, Press any key to restart!");
         $(".startBtn").text("Restart");
         $(".startBtn").removeClass("gayab");
+        $(".score").text("Score : "+(level-1)).removeClass("gayab");
         startOver();
     }
 }
@@ -56,6 +57,7 @@ $(document).keypress(function(event){
         nextSequence();
         started=true;
         $(".startBtn").addClass("gayab");
+        $(".score").addClass("gayab");
     }
 })
 
@@ -65,6 +67,7 @@ $(".startBtn").click(function(event){
         nextSequence();
         started=true;
         $(".startBtn").addClass("gayab");
+        $(".score").addClass("gayab");
     }
 })
 
